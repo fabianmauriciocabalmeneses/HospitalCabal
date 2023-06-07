@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Hospital Cabal</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="./index.html" class="titles">
+            <h1 class="title">Hospital</h1>
+            <span class="sub-title">Cabal</span>
+        </a>
+
+        <nav class="nav-bar">
+            <ul class="nav">
+                <a href="#"><li class="nav_item">Dashboard</li></a>
+                <a href="#"><li class="nav_item">Pacientes</li></a>
+                <a href="#"><li class="nav_item">Medicos</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="grid">
+            <div class="grid-item">
+                <img src="./src/img/RegistrarMedico.jpg" alt="Icono Doctor">
+                <a href="./src/Screens/registrar_doctor.html" class="button">Registrar Doctor</a>
+            </div>
+            <div class="grid-item">
+                <img src="./src/img/RegistrarPaciente.jpg" alt="Icono Paciente">
+                <a href="./src/Screens/registrar_pacientes.html" class="button">Registrar Paciente</a>
+            </div>
+            <div class="grid-item">
+                <img src="./src/img/ConsultarMedico.jpg" alt="Icono Doctor">
+                <a href="./src/Screens/lista_doctores.html" class="button">Consultar Doctores</a>
+            </div>
+            <div class="grid-item">
+                <img src="./src/img/ConsultarPaciente.jpg" alt="Icono Paciente">
+                <a href="./src/Screens/lista_pacientes.html" class="button">Consultar Pacientes</a>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

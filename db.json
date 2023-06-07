@@ -1,0 +1,33 @@
+{
+  "doctores": [
+    {
+      "nombre": "Pepito",
+      "apellido": "perez",
+      "cedula": "12313221",
+      "especialidad": "rehabilitacion_fisica",
+      "consultorio": "500",
+      "email": "Pepito.perez@correo.com",
+      "id": "974462ef-cd2c-490f-bafa-605b55342f51"
+    }
+  ],
+  "pacientes": [
+    {
+      "nombre": "Fabian Mauricio",
+      "apellido": "Cabal Meneses",
+      "cedula": "1026655",
+      "especialidad": "odontologia",
+      "edad": "73104956519",
+      "telefono": "73104956519",
+      "id": "5156fc0c-94c3-4f2c-937c-8cace5a2a486"
+    },
+    {
+      "nombre": "Bertolio",
+      "apellido": "Gomez",
+      "cedula": "99999999999",
+      "especialidad": "dermatologia",
+      "edad": "65",
+      "telefono": "310598712",
+      "id": "2117d191-14f6-453a-a641-9b6876dc802c"
+    }
+  ]
+}

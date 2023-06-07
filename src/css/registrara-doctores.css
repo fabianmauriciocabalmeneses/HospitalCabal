@@ -1,0 +1,20 @@
+:root{
+    --bgGray: ##C3C4CA;
+    --black:#000000;
+    --blue:#1344FF;
+    --white:#FFFFFF;
+    --boder-radius: #9a9ba0;
+  }
+
+
+
+.container{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+}
+
+

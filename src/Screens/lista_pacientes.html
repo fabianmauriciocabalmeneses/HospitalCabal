@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Cabal | Lista Pacientes</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../css/registro_completado.css">
+    <link rel="stylesheet" href="../css/registrara-doctores.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <a href="../../index.html" class="titles">
+            <h1 class="title">Hospital</h1>
+            <span class="sub-title">Cabal</span>
+        </a>
+
+        <nav class="nav-bar">
+            <ul class="nav">
+                <a href="#">
+                    <li class="nav_item">Dashboard</li>
+                </a>
+                <a href="#">
+                    <li class="nav_item">Pacientes</li>
+                </a>
+                <a href="#">
+                    <li class="nav_item">Medicos</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <h1 class="text-center mt-5">Lista Pacientes</h1>
+    <main class="container mt-5 p-5" >
+        
+        <table class="table table-hover " >
+            <thead>
+              <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Apellido</th>
+                <th scope="col">Cédula</th>
+                <th scope="col">Especialidad</th>
+                <th scope="col">Edad</th>
+                <th scope="col">Teléfono</th>
+              </tr>
+            </thead>
+            <tbody class="table-striped" id="table">
+              
+            </tbody>
+          </table>
+      </main>
+    <script type="module" src="../../controllers/listaPac-controller.js"></script>
+</body>
+
+</html>

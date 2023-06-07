@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Cabal | Registro Doctor</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../css/registrara-doctores.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <a href="../../index.html" class="titles">
+            <h1 class="title">Hospital</h1>
+            <span class="sub-title">Cabal</span>
+        </a>
+
+        <nav class="nav-bar">
+            <ul class="nav">
+                <a href="#">
+                    <li class="nav_item">Dashboard</li>
+                </a>
+                <a href="#">
+                    <li class="nav_item">Pacientes</li>
+                </a>
+                <a href="#">
+                    <li class="nav_item">Medicos</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Formulario de doctores -->
+        <form class="form" id="doctorForm">
+            <h2>Registrar Doctores</h2>
+            <div class="input-container">
+            <input
+              name="nombre"
+              id="nombreDoctor"
+              class="input"
+              type="text"
+              placeholder="Nombre"
+              required
+              data-nombre
+            />
+            <label class="input-label" for="nombreDoctor">Nombre:</label>
+            </div>
+            <div class="input-container">                
+                <input 
+                name="apellido"
+                id="apellidoDoctor" 
+                class="input" 
+                type="text"
+                placeholder="Apellido" 
+                required
+                data-apellido
+                >
+                <label class="input-label" for="apellidoDoctor">Apellido:</label>
+            </div>
+            <div class="input-container">
+                
+                <input
+                name="cedula"
+                id="cedulaDoctor"
+                class="input"
+                placeholder="cedula"                 
+                type="text"                  
+                required
+                data-cedula>
+                <label class="input-label" for="cedulaDoctor">Número de Cédula:</label>
+            </div>
+            <div class="input-container">
+                <label class="input-label" for="especialidadDoctor">Especialidad:</label>
+                <select class="input select" id="especialidadDoctor" required>
+                    <option value="">Seleccione una especialidad</option>
+                    <option value="medicina_general">Medicina general</option>
+                    <option value="cardiologia">Cardiología</option>
+                    <option value="medicina_interna">Medicina interna</option>
+                    <option value="dermatologia">Dermatología</option>
+                    <option value="rehabilitacion_fisica">Rehabilitación física</option>
+                    <option value="psicologia">Psicología</option>
+                    <option value="odontologia">Odontología</option>
+                    <option value="radiologia">Radiología</option>
+                </select>
+            </div>
+            <div class="input-container">
+                
+                <input
+                name="consultorio"
+                id="consultorio"
+                class="input"
+                placeholder="Consultorio"  
+                type="text"
+                required
+                data-consultorio>
+                <label class="input-label" for="consultorio">Consultorio:</label>
+            </div>
+            <div class="input-container">
+                
+                <input
+                name="email"
+                id="correoDoctor"
+                class="input"
+                placeholder="email"  
+                type="email"
+                required
+                data-email>
+                <label for="correoDoctor" class="input-label">Correo de contacto:</label>                
+            </div>
+            <button type="submit" class="button" data-btn>Guardar Doctor</button>
+            
+            
+        </form>
+
+
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <Script src="../../controllers/doctores-controller.js" type="module"></Script>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Cabal | Registrar Pacientes</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../css/registrara-doctores.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+</head>
+<body>
+    <header class="header">
+        <a href="../../index.html" class="titles">
+            <h1 class="title">Hospital</h1>
+            <span class="sub-title">Cabal</span>
+        </a>
+
+        <nav class="nav-bar">
+            <ul class="nav">
+                <a href="#">
+                    <li class="nav_item">Dashboard</li>
+                </a>
+                <a href="#">
+                    <li class="nav_item">Pacientes</li>
+                </a>
+                <a href="#">
+                    <li class="nav_item">Medicos</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Formulario de Pacientes -->
+        <form class="form" id="pacienteForm">
+            <h2>Registrar Paciente</h2>
+            <div class="input-container">
+            <input
+              name="nombre"
+              id="nombrePaciente"
+              class="input"
+              type="text"
+              placeholder="Nombre"
+              required
+              data-nombreP
+            />
+            <label class="input-label" for="nombreDoctor">Nombre:</label>
+            </div>
+            <div class="input-container">                
+                <input 
+                name="apellido"
+                id="apellidoPaciente" 
+                class="input" 
+                type="text"
+                placeholder="Apellido" 
+                required
+                data-apellidoP
+                >
+                <label class="input-label" for="apellidoDoctor">Apellido:</label>
+            </div>
+
+            <div class="input-container">
+                
+                <input
+                name="cedula"
+                id="cedulaPaciente"
+                class="input"
+                placeholder="cedula"                 
+                type="text"                  
+                required
+                data-cedulaP>
+                <label class="input-label" for="cedulaDoctor">Número de Cédula:</label>
+            </div>
+            <div class="input-container">                
+                <input 
+                name="edad"
+                id="edadPaciente" 
+                class="input" 
+                type="text"
+                placeholder="Edad" 
+                required
+                data-edadP
+                >
+                <label class="input-label" for="edadPaciente">Edad:</label>
+            </div>
+            <div class="input-container">                
+                <input 
+                name="telefono"
+                id="telPaciente" 
+                class="input" 
+                type="tel"
+                placeholder="Teléfono" 
+                required
+                data-telefonoP
+                >
+                <label class="input-label" for="edadPaciente">Teléfono:</label>
+            </div>
+            <div class="input-container">
+                <label class="input-label" for="especialidadPaciente">Especialidad:</label>
+                <select class="input select" id="especialidadPaciente" required>
+                    <option value="">Seleccione una especialidad</option>
+                    <option value="medicina_general">Medicina general</option>
+                    <option value="cardiologia">Cardiología</option>
+                    <option value="medicina_interna">Medicina interna</option>
+                    <option value="dermatologia">Dermatología</option>
+                    <option value="rehabilitacion_fisica">Rehabilitación física</option>
+                    <option value="psicologia">Psicología</option>
+                    <option value="odontologia">Odontología</option>
+                    <option value="radiologia">Radiología</option>
+                </select>
+            </div>
+            
+            <button class="button" type="submit">Guardar Paciente</button>
+        </form>
+
+
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <Script src="../../controllers/pacientes-controller.js" type="module"></Script>
+</body>
+</html>
